@@ -1,2 +1,36 @@
 This section contains commands which can be executed with global/system shortcut
 (even when the main application window is not active).
+
+### [Disable Monitoring State Permanently](disable-clipboard-monitoring-state-permanently.ini)
+
+Disables clipboard monitoring permanently, i.e. the state is restored when clipboard changes even after application is restarted.
+
+### [Edit and Paste](edit-and-paste.ini)
+
+Following command allows to edit current clipboard text before pasting it.
+
+If the editing is canceled the text won't be pasted.
+
+### [Paste Current Date and Time](paste-current-date-time.ini)
+
+Copies current date/time text to clipboard and pastes to current window on global shortcut <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
+
+### [Quickly Show Current Clipboard Content](quickly-show-current-clipboard-content.ini)
+
+Quickly pops up notification with text in clipboard using `Win+Alt+C` system shortcut.
+
+### [Replace All Occurrences in Selected Text](replace-all-occurences-in-selected-text.ini)
+
+### [Snippets](snippets.ini)
+
+Shows dialog with snippets to paste.
+
+Snippets are loaded from "Snippets" tab.
+
+Items can contain placeholders like `${Name}`.
+When such snippet is selected, user is prompted to replace these placeholders with custom content.
+
+### [Change Upper/Lower Case of Selected Text](toggle-upper-lower-case-of-selected-text.ini)
+
+Toggles between upper- and lower-case letters in selected text.
+
