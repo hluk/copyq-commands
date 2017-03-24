@@ -9,7 +9,7 @@ Just open pull request or an issue.
 - [Automatic](https://github.com/hluk/copyq-commands/tree/master/Automatic) - Commands which are executed automatically whenever something is copied to clipboard
 - [Global](https://github.com/hluk/copyq-commands/tree/master/Global) - Commands which can be executed with global/system shortcut
 
-# Add Command to CopyQ
+# Add a Command to CopyQ
 
 To add a command to CopyQ:
 
@@ -18,4 +18,14 @@ To add a command to CopyQ:
 - open Command dialog (<kbd>F6</kbd> shortcut),
 - click "Paste Commands" button (or <kbd>Ctrl</kbd>+<kbd>V</kbd>),
 - apply changes.
+
+# Write new Commands
+
+See following documentation about writing commands and scripting.
+
+- [Writing Commands and Adding Functionality](https://github.com/hluk/CopyQ/wiki/Writing-Commands-and-Adding-Functionality)
+- [Scripting](https://github.com/hluk/CopyQ/wiki/Scripting)
+- [Scripting Reference](https://github.com/hluk/CopyQ/blob/master/src/scriptable/README.md)
+
+Submit new pull request in this repository if you want to share a command.
 
