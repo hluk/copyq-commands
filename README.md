@@ -5,10 +5,9 @@ Just open pull request or an issue.
 
 # Categories
 
-- Application - Contains commands which can be executed from tool bar, menu or with shortcut.
-- Automatic - Contains commands which are executed automatically whenever something is copied to clipboard.
-- Global - Contains commands which can be executed with global/system shortcut
-(even when the main application window is not active).
+- [Application](https://github.com/hluk/copyq-commands/tree/master/Application) - Commands which can be executed from tool bar, menu or with shortcut
+- [Automatic](https://github.com/hluk/copyq-commands/tree/master/Automatic) - Commands which are executed automatically whenever something is copied to clipboard
+- [Global](https://github.com/hluk/copyq-commands/tree/master/Global) - Commands which can be executed with global/system shortcut
 
 # Add Command to CopyQ
 
