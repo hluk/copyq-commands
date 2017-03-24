@@ -8,6 +8,12 @@ Automatically adds new clipboard to tab with same name as title of the window wh
 
 This is useful for ignoring cells copied as images from Microsoft Excel and LibreOffice Calc.
 
+### [Import Commands after Copied to Clipboard](import-commands-after-copied.ini)
+
+Shows notification allowing to easily import commands just copied to clipboard.
+
+Available in CopyQ v3.0.0.
+
 ### [Linkify](linkify.ini)
 
 Creates interactive link from plain text.
