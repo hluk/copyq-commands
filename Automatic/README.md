@@ -37,3 +37,7 @@ Requires "Tags" plugin.
 
 Synchronizes clipboard with other application session running on different X11 servers.
 
+### [Tab for URLs with Title and Icon](tab-for-urls-with-title-and-icon.ini)
+
+For copied URLS tries to get web page title and icon and stores it with item in "url" tab.
+

@@ -55,10 +55,6 @@ Opens dialog for saving selected item data to a file.
 
 Searches an text in all tabs and stores found items in "Search" tab.
 
-### [Tab for URLs with Title and Icon](tab-for-urls-with-title-and-icon.ini)
-
-For copied URLS tries to get web page title and icon and stores it with item in "url" tab.
-
 ### [Translate to English](translate-to-english.ini)
 
 Passes text to [Google Translate](https://translate.google.com/).
