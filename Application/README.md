@@ -1,5 +1,11 @@
 This section contains commands which can be executed from tool bar, menu or with shortcut.
 
+### [Copy and Paste Items in JSON Format](copy-paste-items-as-json.ini)
+
+Allows to easily share items in readable text format.
+
+Available in CopyQ v3.0.0.
+
 ### [Edit File](edit-file.ini)
 
 Opens file referenced by selected item in external editor (uses "External editor command" from "History" config tab).
