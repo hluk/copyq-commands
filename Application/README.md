@@ -49,10 +49,6 @@ Command can be both automatically applied on text copied to clipboard and invoke
 
 Converts text item with HTML code to HTML item.
 
-### [Render Math Equations](render-math-equations.ini)
-
-Renders math equations using [MathJax](http://www.mathjax.org/) (e.g. `$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$`).
-
 ### [Save Item/Clipboard To a File](save-item-clipboard-to-file.ini)
 
 Opens dialog for saving selected item data to a file.
