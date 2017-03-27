@@ -23,6 +23,10 @@ Works with following path formats (some editors may not support all of these).
 
 Two commands to add frequent items to special tab and to show frequent items with global shortcut.
 
+### [Hide/Show Item Content](hide-item-content.ini)
+
+Hides (or shows if hidden) item content except notes and tags.
+
 ### [Highlight Text](highlight-text.ini)
 
 Highlights all occurrences of a text (change `x = "text"` to match something else than `text`).
