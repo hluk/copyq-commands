@@ -61,6 +61,10 @@ Opens dialog for saving selected item data to a file.
 
 Searches an text in all tabs and stores found items in "Search" tab.
 
+### [Toggle Simple Items](toggle-simple-items.ini)
+
+Show/hide more compact items (one line of text or thumbnail).
+
 ### [Translate to English](translate-to-english.ini)
 
 Passes text to [Google Translate](https://translate.google.com/).
