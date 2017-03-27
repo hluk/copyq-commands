@@ -1,6 +1,12 @@
 This section contains commands which can be executed with global/system shortcut
 (even when the main application window is not active).
 
+### [Copy Text in Image](copy-text-in-image.ini)
+
+Takes screenshot of selected part of the screen and tries to recognize text.
+
+Requires [ImageMagick](https://www.imagemagick.org/script/download.php) and [Tesseract](https://github.com/tesseract-ocr/tesseract/wiki/Downloads).
+
 ### [Disable Monitoring State Permanently](disable-clipboard-monitoring-state-permanently.ini)
 
 Disables clipboard monitoring permanently, i.e. the state is restored when clipboard changes even after application is restarted.
