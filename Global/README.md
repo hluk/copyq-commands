@@ -27,6 +27,14 @@ Quickly pops up notification with text in clipboard using `Win+Alt+C` system sho
 
 ### [Replace All Occurrences in Selected Text](replace-all-occurences-in-selected-text.ini)
 
+### [Screenshot](screenshot.ini)
+
+Take screenshot of the screen.
+
+### [Screenshot Cutout](screenshot-cutout.ini)
+
+Take screenshot of selected part of the screen.
+
 ### [Snippets](snippets.ini)
 
 Shows dialog with snippets to paste.
