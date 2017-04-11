@@ -20,6 +20,16 @@ To add a command to CopyQ:
 - click "Paste Commands" button (or <kbd>Ctrl</kbd>+<kbd>V</kbd>),
 - apply changes.
 
+To **simplify this** add [command](Automatic/import-commands-after-copied.ini)
+which shows notification with button to import all commands copied to clipboard.
+This also works if you just copy a link with commands.
+
+![Select Category](images/select-category.png)
+
+![Copy Command Link](images/copy-command-link.png)
+
+![Import Command Notification](images/import-command-notification.png)
+
 # Write new Commands
 
 See following documentation about writing commands and scripting.
