@@ -25,9 +25,7 @@ which shows notification with button to import all commands copied to clipboard.
 This also works if you just copy a link with commands.
 
 ![Select Category](images/select-category.png)
-
 ![Copy Command Link](images/copy-command-link.png)
-
 ![Import Command Notification](images/import-command-notification.png)
 
 # Write new Commands
