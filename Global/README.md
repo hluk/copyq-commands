@@ -44,6 +44,10 @@ Snippets are loaded from "Snippets" tab.
 Items can contain placeholders like `${Name}`.
 When such snippet is selected, user is prompted to replace these placeholders with custom content.
 
+### [Capitalize Selected Text for Titles](to-title-case.ini)
+
+E.g. changes "Do androids dream of electric sheep?" to "Do Androids Dream of Electric Sheep?".
+
 ### [Change Upper/Lower Case of Selected Text](toggle-upper-lower-case-of-selected-text.ini)
 
 Toggles between upper- and lower-case letters in selected text.
