@@ -41,6 +41,10 @@ Shows source application window title for new items in tag.
 
 Requires "Tags" plugin.
 
+### [Store Mouse Selections in Separate Tab](mouse-selections-tab.ini)
+
+Stores Linux/X11 mouse selections in a separate tab.
+
 ### [Synchronize Clipboard with Other Sessions](synchronize-clipboard-with-other-sessions.ini)
 
 Synchronizes clipboard with other application session running on different X11 servers.
