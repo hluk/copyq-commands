@@ -39,9 +39,9 @@ Take screenshot of selected part of the screen.
 
 Shows dialog with snippets to paste.
 
-Snippets are loaded from "Snippets" tab.
+Snippets are loaded from "Snippets" tab. Item notes are used as snippet name.
 
-Items can contain placeholders like `${Name}`.
+Items can contain placeholders like `${Name}`, `${Name:default value}`, `${Name:value1,value2,value3}` and similar.
 When such snippet is selected, user is prompted to replace these placeholders with custom content.
 
 ### [Capitalize Selected Text for Titles](to-title-case.ini)
