@@ -8,6 +8,7 @@ Just open pull request or an issue.
 - [Application](https://github.com/hluk/copyq-commands/tree/master/Application) - Commands which can be executed from tool bar, menu or with shortcut
 - [Automatic](https://github.com/hluk/copyq-commands/tree/master/Automatic) - Commands which are executed automatically whenever something is copied to clipboard
 - [Global](https://github.com/hluk/copyq-commands/tree/master/Global) - Commands which can be executed with global/system shortcut
+- [Scripts](https://github.com/hluk/copyq-commands/tree/master/Scripts) - Scripts for changing application behavior, extending command line and adding functionality
 - [Templates](https://github.com/hluk/copyq-commands/tree/master/Templates) - Templates for new commands
 
 # Add a Command to CopyQ
