@@ -1,5 +1,9 @@
 This section contains commands which can be executed from tool bar, menu or with shortcut.
 
+### [Clear Clipboard Tab](clear-clipboard-tab.ini)
+
+Remove all items from clipboard tab using menu item (or custom shortcut).
+
 ### [Copy and Paste Items in JSON Format](copy-paste-items-as-json.ini)
 
 Allows to easily share items in readable text format.
