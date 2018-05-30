@@ -8,3 +8,7 @@ Clears clipboard after an interval (30 seconds by default).
 
 Persistently displays notification with clipboard (and X11 selection) content.
 
+### [No Clipboard in Title and Tool Tip](no-clipboard-in-title-and-tooltip.ini)
+
+Stop showing current clipboard content in window title and tray tool tip.
+
