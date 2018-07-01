@@ -31,9 +31,12 @@ Following command will play an audio file whenever something is copied clipboard
 
 ### [Store Copy Time](store-copy-time.ini)
 
-Store copy time of new items in tag.
+Store copy time of new items in a tag.
 
-To show the copied time the "Tags" plugin is required.
+To show the copied time the "Tags" plugin is required. Also you have to configure a tag such as the following:
+`Tag Name`: `\1`
+`Match`: `(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})`
+`Style Sheet`: `font-size: 9pt; border: 1px solid #000; background: #000; padding: 0 2px`
 
 ### [Show Window Title](show-window-title.ini)
 
