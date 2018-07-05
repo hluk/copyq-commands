@@ -33,9 +33,9 @@ This also works if you just copy a link with commands.
 
 See following documentation about writing commands and scripting.
 
-- [Writing Commands and Adding Functionality](https://github.com/hluk/CopyQ/wiki/Writing-Commands-and-Adding-Functionality)
-- [Scripting](https://github.com/hluk/CopyQ/wiki/Scripting)
-- [Scripting Reference](https://github.com/hluk/CopyQ/blob/master/src/scriptable/README.md)
+- [Writing Commands and Adding Functionality](https://copyq.readthedocs.io/en/latest/writing-commands-and-adding-functionality.html)
+- [Scripting](https://copyq.readthedocs.io/en/latest/scripting.html)
+- [Scripting API](https://copyq.readthedocs.io/en/latest/scripting-api.html)
 
 Submit new pull request in this repository if you want to share a command.
 
