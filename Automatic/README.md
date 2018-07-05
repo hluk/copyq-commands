@@ -29,11 +29,20 @@ This can make application a bit more snappier since big image data won't need to
 
 Following command will play an audio file whenever something is copied clipboard.
 
-### [Show Copy Time](show-copy-time.ini)
+### [Store Copy Time](store-copy-time.ini)
 
-Shows copy time of new items in tag.
+Store the copy time of new items in a **tag**.
 
-Requires "Tags" plugin.
+To show tags in the item list the **Tags** plugin is required.
+
+Optionally you can change the appearence of the copy time tag. See this example:
+
+`Tag Name`: `\1`
+
+`Match`: `(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})`
+
+`Style Sheet`: `font-size: 9pt; color: #fff; border: 1px solid #000; background: #000; padding: 0 2px`
+
 
 ### [Show Window Title](show-window-title.ini)
 
