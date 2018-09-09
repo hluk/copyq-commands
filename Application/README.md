@@ -77,3 +77,7 @@ Passes text to [Google Translate](https://translate.google.com/).
 
 Two commands to move items to trash and to undo removals.
 
+### [Paste Formatted Json](paste-formatted-json.ini)
+
+Pastes selected Json text as a formatted Json text.
+If not Json, just pastes the text as is.
