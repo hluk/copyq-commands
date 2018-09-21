@@ -17,3 +17,6 @@ operation (after custom interval).
 
 Stop showing current clipboard content in window title and tray tool tip.
 
+### [Reset Empty Clipboard/Selection](reset-empty-clipboard.ini)
+
+Resets last clipboard text (or X11 selection) if it's cleared.
