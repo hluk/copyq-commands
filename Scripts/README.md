@@ -1,5 +1,9 @@
 This section contains commands which modify or extend default application behavior.
 
+### [Backup On Exit](backup-on-exit.ini)
+
+Backs up items and configuration on exit.
+
 ### [Clear Clipboard After Interval](clear-clipboard-after-interval.ini)
 
 Clears clipboard after an interval (30 seconds by default).
