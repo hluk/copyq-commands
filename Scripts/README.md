@@ -4,6 +4,14 @@ This section contains commands which modify or extend default application behavi
 
 Backs up items and configuration on exit.
 
+### [Blacklisted Texts](blacklisted_texts.ini)
+
+Blacklists clipboard text to omit adding it in item list and avoid running
+automatic commands on it.
+
+Only checksum of the text (salted) is stored in the blacklist so this can be
+safely used with passwords (the texts are not stored anywhere).
+
 ### [Clear Clipboard After Interval](clear-clipboard-after-interval.ini)
 
 Clears clipboard after an interval (30 seconds by default).
