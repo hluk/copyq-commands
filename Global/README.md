@@ -1,6 +1,10 @@
 This section contains commands which can be executed with global/system shortcut
 (even when the main application window is not active).
 
+### [Copy a Secret](copy-a-secret.ini)
+
+Copies (Ctrl+C) from current window without storing or showing the data in GUI.
+
 ### [Copy Text in Image](copy-text-in-image.ini)
 
 Takes screenshot of selected part of the screen and tries to recognize text.
