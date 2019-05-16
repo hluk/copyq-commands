@@ -20,6 +20,12 @@ Clears clipboard after an interval (30 seconds by default).
 
 Persistently displays notification with clipboard (and X11 selection) content.
 
+### [Ignore Non-Mouse Text Selection](ignore-non-mouse-text-selection.ini)
+
+Linux/X11 only. Some web or other applications can automatically set X11 mouse
+selection buffer. This can be quiet annoying so this command tries to reset the
+buffer to previous content when this happens.
+
 ### [Keep Item in Clipboard](keep-item-in-clipboard.ini)
 
 Keeps the first item (can be pinned) in clipboard at start and after a copy
