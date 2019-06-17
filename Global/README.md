@@ -53,6 +53,22 @@ Items can contain placeholders like:
 
 When such snippet is selected, user is prompted to replace these placeholders with custom content.
 
+To create your first snippet:
+
+1. create "Snippets" tab (Ctrl+T),
+2. add new item (Ctrl+N) with a snippet:
+
+    You picked ${Fruit:apples,oranges,pears}!
+
+3. set optional snippet name (Ctrl+F2), e.g. "Fruit".
+
+Triggering the Snippets command (with a global shortcut) will show a simple
+dialog where you can pick the snippet by its name.
+
+To pick different tab name, you have to change the command's code.
+
+    var snippetsTabName = '&Snippets'
+
 ### [Capitalize Selected Text for Titles](to-title-case.ini)
 
 E.g. changes "Do androids dream of electric sheep?" to "Do Androids Dream of Electric Sheep?".
