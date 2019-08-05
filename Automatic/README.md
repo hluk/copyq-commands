@@ -62,3 +62,6 @@ Synchronizes clipboard with other application session running on different X11 s
 
 For copied URLS tries to get web page title and icon and stores it with item in "url" tab.
 
+### [KeePassXC protector](keepassxc-protector.ini)
+
+A plugin that prevents saving data from the [KeePassXC](https://github.com/keepassxreboot/keepassxc) password manager.
