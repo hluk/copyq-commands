@@ -38,3 +38,7 @@ Stop showing current clipboard content in window title and tray tool tip.
 ### [Reset Empty Clipboard/Selection](reset-empty-clipboard.ini)
 
 Resets last clipboard text (or X11 selection) if it's cleared.
+
+### [Show on Start](show-on-start.ini)
+
+Show main window after application starts.
