@@ -34,6 +34,8 @@ test = {
     },
 
     importCommands: function(ini) {
+        serverLog('Importing: ' + ini)
+
         var commandConfigFile = new File(ini)
         if (!commandConfigFile.openReadOnly())
             throw 'Failed to open ini file: ' + ini

@@ -32,20 +32,33 @@ start_server() {
     mkdir -p "$COPYQ_SETTINGS_PATH"
     "$COPYQ" 2> /dev/null &
     copyq_pid=$!
-}
-
-init_server() {
-    run_copyq show
     run_copyq copy '' > /dev/null
+    show_if_needed
 }
 
 run_script() {
     run_copyq source tests/test_functions.js test.importCommandsForTest "$js"
+
+    restart_if_needed
+
     if ! run_copyq source tests/test_functions.js test.run "$js"; then
         cat "$COPYQ_LOG_FILE"
         echo "Failed! See whole log: $tests_log_file"
         echo
         failed_count=$((failed_count + 1))
+    fi
+}
+
+show_if_needed() {
+    if ! grep -q '^// tests:.*noshow' "$js"; then
+        run_copyq show
+    fi
+}
+
+restart_if_needed() {
+    if grep -q '^// tests:.*restart' "$js"; then
+        run_copyq exit
+        start_server
     fi
 }
 
@@ -65,7 +78,6 @@ for js in "$@"; do
 
     stop_server
     start_server
-    init_server
 
     run_script "$js"
 
