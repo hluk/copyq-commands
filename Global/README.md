@@ -39,6 +39,10 @@ Take screenshot of the screen.
 
 Take screenshot of selected part of the screen.
 
+### [Show Clipboard](show-clipboard.ini)
+
+Shows notification with current clipboard content (text or image).
+
 ### [Snippets](snippets.ini)
 
 Shows dialog with snippets to paste.
