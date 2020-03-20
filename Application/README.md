@@ -23,6 +23,11 @@ Works with following path formats (some editors may not support all of these).
 - `$...` (environment variables)
 - `/c/...` (gitbash)
 
+### [Next/Previous](next-previous.ini)
+
+Remaps Up/Down arrows for browsing items to Ctrl+P/Ctrl+N or other custom
+shortcuts.
+
 ### [Tab for Frequent Items](frequent-items-tab.ini)
 
 Two commands to add frequent items to special tab and to show frequent items with global shortcut.
