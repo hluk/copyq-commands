@@ -81,3 +81,8 @@ E.g. changes "Do androids dream of electric sheep?" to "Do Androids Dream of Ele
 
 Toggles between upper- and lower-case letters in selected text.
 
+### [Compare Last/Selected Two Clipboard History Items](compare_last_two_clipboard_history_items.ini)
+
+Compare last or selected two clipboard history items use your's preferred tools.
+in this example use [Beyond Compare 4](https://www.scootersoftware.com/download.php) as a diff tools.
+maybe you want pick a global key(`Win+Alt+d in this script`) to run it.
