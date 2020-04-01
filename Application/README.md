@@ -86,3 +86,53 @@ Two commands to move items to trash and to undo removals.
 
 Pastes selected Json text as a formatted Json text.
 If not Json, just pastes the text as is.
+
+### [Treefy](treefy.ini)
+
+Convert indented line block (tabs, spaces or markdown headers) to an ASCII directory tree with the possibility to add a root element.
+
+Example
+
+```
+A1
+  B1
+    C1
+      D1
+        E1
+      D2
+        E2
+Z1
+  Y1
+    X1
+```
+
+Output (with root)
+
+```
+.
+├─ A1
+│  └─ B1
+│     └─ C1
+│        ├─ D1
+│        │  └─ E1
+│        └─ D2
+│           └─ E2
+└─ Z1
+   └─ Y1
+      └─ X1
+```
+
+Output (without root)
+
+```
+A1
+└─ B1
+   └─ C1
+      ├─ D1
+      │  └─ E1
+      └─ D2
+         └─ E2
+Z1
+└─ Y1
+   └─ X1
+```
