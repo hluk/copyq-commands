@@ -23,6 +23,12 @@ Works with following path formats (some editors may not support all of these).
 - `$...` (environment variables)
 - `/c/...` (gitbash)
 
+### [Encrypt and Type](encrypt-and-type.ini)
+
+Safely types in decrypted text of selected item instead of using clipboard.
+
+Requires "xdotool" utility which works only on Linux/X11.
+
 ### [Next/Previous](next-previous.ini)
 
 Remaps Up/Down arrows for browsing items to Ctrl+P/Ctrl+N or other custom
