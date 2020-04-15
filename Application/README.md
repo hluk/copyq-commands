@@ -23,7 +23,7 @@ Works with following path formats (some editors may not support all of these).
 - `$...` (environment variables)
 - `/c/...` (gitbash)
 
-### [Encrypt and Type](encrypt-and-type.ini)
+### [Decrypt and Type](decrypt-and-type.ini)
 
 Safely types in decrypted text of selected item instead of using clipboard.
 
