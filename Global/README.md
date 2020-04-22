@@ -81,8 +81,13 @@ E.g. changes "Do androids dream of electric sheep?" to "Do Androids Dream of Ele
 
 Toggles between upper- and lower-case letters in selected text.
 
-### [Compare Last/Selected Two Clipboard History Items](compare_last_two_clipboard_history_items.ini)
+### [Diff Latest Items](diff-latest-items.ini)
 
-Compare last or selected two clipboard history items use your's preferred tools.
-in this example use [Beyond Compare 4](https://www.scootersoftware.com/download.php) as a diff tools.
-maybe you want pick a global key(`Win+Alt+d in this script`) to run it.
+Compares two clipboard history items with your preferred diff tool.
+
+The latest two items get compared when the command is run as a global command.
+You can also run the command on any two items selected in the main window.
+
+By default, this command launches [Beyond Compare 4](https://www.scootersoftware.com/download.php)
+for doing the comparison.
+You can find examples of launching other tools like [WinMerge](https://winmerge.org/downloads) directly in the command's source code.
