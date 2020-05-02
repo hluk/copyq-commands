@@ -9,7 +9,8 @@ Copies (Ctrl+C) from current window without storing or showing the data in GUI.
 
 Takes screenshot of selected part of the screen and tries to recognize text.
 
-Requires [ImageMagick](https://www.imagemagick.org/script/download.php) and [Tesseract](https://github.com/tesseract-ocr/tesseract/wiki/Downloads).
+Requires [GraphicsMagick](http://www.graphicsmagick.org/download.html)
+and [Tesseract](https://github.com/tesseract-ocr/tesseract/wiki/Downloads).
 
 ### [Disable Monitoring State Permanently](disable-clipboard-monitoring-state-permanently.ini)
 
