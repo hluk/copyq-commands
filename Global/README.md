@@ -74,6 +74,10 @@ To pick different tab name, you have to change the command's code.
 
     var snippetsTabName = '&Snippets'
 
+### [Toggle Clipboard Storing](toggle-clipboard-storing.ini)
+
+Toggles clipboard storing/monitoring with global shortcut or from menu/toolbar.
+
 ### [Capitalize Selected Text for Titles](to-title-case.ini)
 
 E.g. changes "Do androids dream of electric sheep?" to "Do Androids Dream of Electric Sheep?".
