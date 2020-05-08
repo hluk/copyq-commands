@@ -20,6 +20,10 @@ Clears clipboard after an interval (30 seconds by default).
 
 Persistently displays notification with clipboard (and X11 selection) content.
 
+### [Full Clipboard Text in Title and Tooltip](full-clipboard-in-title.ini)
+
+Shows full clipboard text in window title and tray tooltip.
+
 ### [Ignore Non-Mouse Text Selection](ignore-non-mouse-text-selection.ini)
 
 Linux/X11 only. Some web or other applications can automatically set X11 mouse
