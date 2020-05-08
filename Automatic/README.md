@@ -10,6 +10,10 @@ access to primary clipboard tab swift.
 
 Automatically adds new clipboard to tab with same name as title of the window where copy operation was performed.
 
+### [Full Clipboard Text in Title and Tooltip](Automatic/full-clipboard-in-title.ini)
+
+Shows full clipboard text in window title and tray tooltip.
+
 ### [Ignore Images when Text is Available](ignore-images-when-text-is-available.ini)
 
 This is useful for ignoring cells copied as images from Microsoft Excel and LibreOffice Calc.
