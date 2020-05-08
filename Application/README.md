@@ -80,6 +80,11 @@ Searches an text in all tabs and stores found items in "Search" tab.
 
 Show/hide more compact items (one line of text or thumbnail).
 
+### [Toggle Tag](toggle-tag.ini)
+
+Instead of two commands, one to tag and other to untag selected items, and see
+two actions in toolbar, you can use this command to toggle a tag.
+
 ### [Translate to English](translate-to-english.ini)
 
 Passes text to [Google Translate](https://translate.google.com/).
