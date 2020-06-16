@@ -98,6 +98,10 @@ Two commands to move items to trash and to undo removals.
 Pastes selected Json text as a formatted Json text.
 If not Json, just pastes the text as is.
 
+### [Tab Key to Select Next/Previous](tab-key-select.ini)
+
+Use Tab and Shift+Tab to select next/previous item.
+
 ### [Treefy](treefy.ini)
 
 Convert indented line block (tabs, spaces or markdown headers) to an ASCII directory tree with the possibility to add a root element.
