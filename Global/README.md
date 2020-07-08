@@ -96,3 +96,36 @@ You can also run the command on any two items selected in the main window.
 By default, this command launches [Beyond Compare 4](https://www.scootersoftware.com/download.php)
 for doing the comparison.
 You can find examples of launching other tools like [WinMerge](https://winmerge.org/downloads) directly in the command's source code.
+
+### [Convert Markdown to ...](convert-markdown.ini)
+
+Converts text written in [Markdown syntax](https://daringfireball.net/projects/markdown/syntax)
+to desired format, which can be for example:
+
+* HTML
+* [Jira markup](https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all)
+* JSON (AST) (JSON representation of the parsed text; useful rather for contributors than users)
+* [LaTeX](https://en.wikipedia.org/wiki/LaTeX)
+
+The command can be run on any text selection via a global shortcut or over items selected
+in the main window.
+
+#### Installation
+
+This script relies on the [mistletoe](https://github.com/miyuchina/mistletoe) project to do the
+actual Markdown parsing and conversion.
+This in turn requires that [Python](https://www.python.org/downloads/) 3.x is installed on the user computer.
+
+At the time of writing, the mistletoe project seems to abandoned by its maintainers, so for example
+if a really working conversion to Jira markup is needed (see [PR #100](https://github.com/miyuchina/mistletoe/pull/100)),
+the recommended mistletoe installation steps are the following:
+
+    cd /path/to/directory/of/your/choice
+    git clone https://github.com/pbodnar/mistletoe.git
+    cd mistletoe
+    git checkout fix-jira-renderer
+    pip3 install -e .
+
+For output format "HTML + code highlighting", an additional Python module needs to be installed:
+
+    pip3 install pygments
