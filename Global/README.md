@@ -40,6 +40,11 @@ Take screenshot of the screen.
 
 Take screenshot of selected part of the screen.
 
+### [Select Nth Item](select-nth-item.ini)
+
+Quick shortcuts to activate items 0 to 9 (copy, move to top and paste depending
+on preferences in History configuration tab).
+
 ### [Show Clipboard](show-clipboard.ini)
 
 Shows notification with current clipboard content (text or image).
