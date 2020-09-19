@@ -134,3 +134,9 @@ the recommended mistletoe installation steps are the following:
 For output format "HTML + code highlighting", an additional Python module needs to be installed:
 
     pip3 install pygments
+
+### [Show Character Code](show-char-code.ini)
+
+Shows Unicode code info for the first characters of any text. An example of how this looks like:
+
+![Show Character Code Dialog](images/cmd_show-char-code.png)
