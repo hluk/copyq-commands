@@ -128,7 +128,7 @@ the recommended mistletoe installation steps are the following:
     cd /path/to/directory/of/your/choice
     git clone https://github.com/pbodnar/mistletoe.git
     cd mistletoe
-    git checkout fix-jira-renderer
+    git checkout master-pbo
     pip3 install -e .
 
 For output format "HTML + code highlighting", an additional Python module needs to be installed:
