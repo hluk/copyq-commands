@@ -47,6 +47,16 @@ Resets last clipboard text (or X11 selection) if it's cleared.
 
 Show main window after application starts.
 
+### [Sway and Wayland Support](sway-support.ini)
+
+Adds support for some features under Sway Wayland compositor.
+
+Requirements:
+
+- [ydotool](https://github.com/ReimuNotMoe/ydotool) for copy/paste commands
+- [grim](https://github.com/emersion/grim) for taking screenshots
+- [slurt](https://github.com/emersion/slurp) for selecting area for screenshots
+
 ### [Write Clipboard to File](write-clipboard-to-file.ini)
 
 Stores clipboard continuously to a "clipboard.txt" (in home directory).
