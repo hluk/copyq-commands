@@ -26,6 +26,10 @@ If the editing is canceled the text won't be pasted.
 
 Copies current date/time text to clipboard and pastes to current window on global shortcut <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>.
 
+### [Paste Current Date and Time in ISO8601 Format](paste-current-date-time-in-iso-8601.ini)
+
+Copies current date/time in ISO8601 format to clipboard, adds it to the clipboard history, and then pastes it to the current window.
+
 ### [Quickly Show Current Clipboard Content](quickly-show-current-clipboard-content.ini)
 
 Quickly pops up notification with text in clipboard using `Win+Alt+C` system shortcut.
