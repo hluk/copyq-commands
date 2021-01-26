@@ -30,6 +30,11 @@ Copies current date/time text to clipboard and pastes to current window on globa
 
 Copies current date/time in ISO8601 format to clipboard, adds it to the clipboard history, and then pastes it to the current window.
 
+### [Paste new UUID](paste-new-uuid.ini)
+
+Generates a new RFC4122 version 4 compliant UUID, adds it to the clipboard history, copies it to the clipboard and pastes it to the current window.
+Full credit for UUID generation code goes to Jeff Ward (jcward.com), link: https://stackoverflow.com/a/21963136/11820711
+
 ### [Quickly Show Current Clipboard Content](quickly-show-current-clipboard-content.ini)
 
 Quickly pops up notification with text in clipboard using `Win+Alt+C` system shortcut.
