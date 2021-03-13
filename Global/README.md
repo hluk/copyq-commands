@@ -88,6 +88,10 @@ To pick different tab name, you have to change the command's code.
 
     var snippetsTabName = '&Snippets'
 
+### [Stopwatch](stopwatch.ini)
+
+Restarts stopwatch and copies elapsed time since last started.
+
 ### [Toggle Clipboard Storing](toggle-clipboard-storing.ini)
 
 Toggles clipboard storing/monitoring with global shortcut or from menu/toolbar.
