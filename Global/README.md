@@ -12,6 +12,10 @@ Takes screenshot of selected part of the screen and tries to recognize text.
 Requires [GraphicsMagick](http://www.graphicsmagick.org/download.html)
 and [Tesseract](https://github.com/tesseract-ocr/tesseract/wiki/Downloads).
 
+### [Detailed Copy](detailed-copy.ini)
+
+Copies selected text or item and shows dialog for modifing copied Content and entering additional item details: Target Tab, Tag and Notes.
+
 ### [Disable Monitoring State Permanently](disable-clipboard-monitoring-state-permanently.ini)
 
 Disables clipboard monitoring permanently, i.e. the state is restored when clipboard changes even after application is restarted.
