@@ -51,8 +51,9 @@ Show main window after application starts.
 
 Adds support for some features under Sway Wayland compositor.
 
-Enable the "Paste Items when Activated" command if you want the activated items
-(on double-click or Enter key) to be pasted immediately.
+Command "Paste Items when Activated" pastes items when activated (on
+double-click or Enter key) depending on application configuration (History
+configuration tab).
 
 Requirements:
 
