@@ -74,7 +74,7 @@ Opens dialog for saving selected item data to a file.
 
 ### [Quick Save](QickSave.ini)
 
-Saves an item as file to a preset path using available tags as it's file name. There is no user input dialog.  
+Saves an item as file to a preset path using available tags as it's file name, without overwriting. There is no user input dialog.  
 After installation, you *must edit default folder (xyz) path*: `currentPath('C:/abc/xyz')` 
 
 Other options:  
