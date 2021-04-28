@@ -75,6 +75,7 @@ Opens dialog for saving selected item data to a file.
 ### [Quick Save](QickSave.ini)
 
 Saves an item as file to a preset path using available tags as it's file name, without overwriting. There is no user input dialog.  
+This works great along the script [show window title](../Automatic/show-window-title.ini) which saves source window title to tags while adding to clipboard.  
 After installation, you *must edit default folder (xyz) path*: `currentPath('C:/abc/xyz')` 
 
 Other options:  
