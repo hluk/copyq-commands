@@ -72,6 +72,15 @@ Converts text item with HTML code to HTML item.
 
 Opens dialog for saving selected item data to a file.
 
+### [Quick Save](QickSave.ini)
+
+Saves an item as file to a preset path using available tags as it's file name. There is no user input dialog.  
+After installation, you *must edit default folder (xyz) path*: `currentPath('C:/abc/xyz')` 
+
+Other options:  
+Number of words to use from tags (not number of tags): `var words = 3`  
+Default file name if there are no tags: `var defaultname = 'clip'`
+
 ### [Search All Tabs](search-all-tabs.ini)
 
 Searches an text in all tabs and stores found items in "Search" tab.
