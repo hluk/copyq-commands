@@ -72,7 +72,7 @@ Converts text item with HTML code to HTML item.
 
 Opens dialog for saving selected item data to a file.
 
-### [Quick Save](QickSave.ini)
+### [Quick Save](QuickSave.ini)
 
 Saves an item as file to a preset path using available tags as it's file name, without overwriting. There is no user input dialog.  
 This works great along the script [show window title](../Automatic/show-window-title.ini) which saves source window title to tags while adding to clipboard.  
