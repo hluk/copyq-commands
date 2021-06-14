@@ -30,6 +30,10 @@ Linux/X11 only. Some web or other applications can automatically set X11 mouse
 selection buffer. This can be quiet annoying so this command tries to reset the
 buffer to previous content when this happens.
 
+### [Indicate Copy in Icon](indicate-copy-in-icon.ini)
+
+Indicates a copy operation by changing the icon tag.
+
 ### [Keep Item in Clipboard](keep-item-in-clipboard.ini)
 
 Keeps the first item (can be pinned) in clipboard at start and after a copy
