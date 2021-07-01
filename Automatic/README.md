@@ -6,6 +6,11 @@ Automatically moves larger amount of data copied to clipboard to a special tab
 (see the command variables to set the output tab and size limit) to keep the
 access to primary clipboard tab swift.
 
+### [Copy a Secret If a Modifier Held](copy-a-secret-if-modifier-held.ini)
+
+If modifier is held for a second after copying a content, it will not be stored
+or shown in GUI.
+
 ### [Copy Clipboard to Window Tabs](copy-clipboard-to-windows-tab.ini)
 
 Automatically adds new clipboard to tab with same name as title of the window where copy operation was performed.
