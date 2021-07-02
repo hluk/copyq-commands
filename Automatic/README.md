@@ -19,6 +19,10 @@ Automatically adds new clipboard to tab with same name as title of the window wh
 
 This is useful for ignoring cells copied as images from Microsoft Excel and LibreOffice Calc.
 
+### [Image Tab](image-tab.ini)
+
+Automatically store images copied to clipboard in a separate tab.
+
 ### [Import Commands after Copied to Clipboard](import-commands-after-copied.ini)
 
 Shows notification allowing to easily import commands just copied to clipboard.
