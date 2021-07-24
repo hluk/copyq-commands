@@ -112,6 +112,13 @@ If not Json, just pastes the text as is.
 
 Use Tab and Shift+Tab to select next/previous item.
 
+### [Tab Switcher](tab-switcher.ini)
+
+Use a shortcut or a toolbar action to quickly find a tab and focus it on Enter
+key or double click.
+
+This uses a separate CopyQ session/app-instance to show the tab list.
+
 ### [Treefy](treefy.ini)
 
 Convert indented line block (tabs, spaces or markdown headers) to an ASCII directory tree with the possibility to add a root element.
