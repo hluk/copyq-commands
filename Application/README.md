@@ -29,6 +29,17 @@ Safely types in decrypted text of selected item instead of using clipboard.
 
 Requires "xdotool" utility which works only on Linux/X11.
 
+### [Generate MySQL Command Line](generate-mysql-command-line.ini)
+
+Copy MySQL database config with follow order:
+1. host
+2. port
+3. databaseName
+4. username
+5. password
+
+Then you can press shortcut Ctrl+Shift+M to generate MySQL command line. For example: `mysql -hhost -Pport databaseName -uusername -p"password"`
+
 ### [Next/Previous](next-previous.ini)
 
 Remaps Up/Down arrows for browsing items to Ctrl+P/Ctrl+N or other custom
