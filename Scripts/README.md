@@ -53,7 +53,8 @@ Show main window after application starts.
 
 ### [Sway and Wayland Support](sway-support.ini)
 
-Adds support for some features under Sway Wayland compositor.
+Adds support for some features under Sway Wayland compositor and potentially
+others.
 
 Command "Paste Items when Activated" pastes items when activated (on
 double-click or Enter key) depending on application configuration (History
