@@ -43,6 +43,13 @@ operation (after custom interval).
 
 Stop showing current clipboard content in window title and tray tool tip.
 
+### [Remember Clipboard Storing State](remeber-clipboard-storing-state.ini)
+
+Normally, if "Clipboard Storing" is disabled from File menu, it will be
+re-enabled automatically on the application start next time.
+
+This command makes the last set state persistent between application launches.
+
 ### [Reset Empty Clipboard/Selection](reset-empty-clipboard.ini)
 
 Resets last clipboard text (or X11 selection) if it's cleared.
