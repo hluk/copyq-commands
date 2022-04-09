@@ -58,10 +58,10 @@ Resets last clipboard text (or X11 selection) if it's cleared.
 
 Show main window after application starts.
 
-### [Sway and Wayland Support](sway-support.ini)
+### [Wayland Support](wayland-support.ini)
 
-Adds support for some features under Sway Wayland compositor and potentially
-others.
+Adds support for some features under Wayland compositors in KDE, Gnome and
+Sway.
 
 Command "Paste Items when Activated" pastes items when activated (on
 double-click or Enter key) depending on application configuration (History
