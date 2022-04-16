@@ -12,6 +12,14 @@ Takes screenshot of selected part of the screen and tries to recognize text.
 Requires [GraphicsMagick](http://www.graphicsmagick.org/download.html)
 and [Tesseract](https://github.com/tesseract-ocr/tesseract/wiki/Downloads).
 
+### [Cycle Items](cycle-items.ini)
+
+Pops up the main window (if the shortcut is pressed once), cycles through items
+(if the shortcut is pressed again) and pastes selected item when the shortcut
+is released.
+
+See: https://github.com/hluk/CopyQ/issues/1948
+
 ### [Disable Monitoring State Permanently](disable-clipboard-monitoring-state-permanently.ini)
 
 Disables clipboard monitoring permanently, i.e. the state is restored when clipboard changes even after application is restarted.
