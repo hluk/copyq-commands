@@ -5,6 +5,11 @@ This section contains commands which can be executed with global/system shortcut
 
 Copies (Ctrl+C) from current window without storing or showing the data in GUI.
 
+### [Copy and Search on Web](copy-and-search-on-web.ini)
+
+Copies currently selected text and opens selection menu to search the text on
+some well-known websites. New search queries can be easily defined.
+
 ### [Copy Text in Image](copy-text-in-image.ini)
 
 Takes screenshot of selected part of the screen and tries to recognize text.
