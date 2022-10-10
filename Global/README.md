@@ -25,6 +25,11 @@ is released.
 
 See: https://github.com/hluk/CopyQ/issues/1948
 
+### [Cycle Items - Quick](quick-cycle-items.ini)
+
+Like Cycle Items command but previews items to copy in popups without showing
+the main window.
+
 ### [Disable Monitoring State Permanently](disable-clipboard-monitoring-state-permanently.ini)
 
 Disables clipboard monitoring permanently, i.e. the state is restored when clipboard changes even after application is restarted.
