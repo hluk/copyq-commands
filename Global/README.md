@@ -72,6 +72,10 @@ Take screenshot of selected part of the screen.
 Quick shortcuts to activate items 0 to 9 (copy, move to top and paste depending
 on preferences in History configuration tab).
 
+### [Paste Nth Item](paste-nminus1th-item.ini)
+
+Paste items 1-9 in history using ctrl+1 through ctrl+9 shortcuts.
+
 ### [Show Clipboard](show-clipboard.ini)
 
 Shows notification with current clipboard content (text or image).
