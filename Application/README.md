@@ -50,6 +50,9 @@ Highlights all occurrences of a text (change `x = "text"` to match something els
 
 Creates new item containing concatenated text of selected items.
 
+Change the `separator` variable to separate the merged items with a different
+string than line break `\n`.
+
 ### [Mark Selected Items](mark-selected-items.ini)
 
 Toggles highlighting of selected items.
