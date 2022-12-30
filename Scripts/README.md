@@ -71,7 +71,7 @@ Requirements:
 
 - [ydotool](https://github.com/ReimuNotMoe/ydotool) for copy/paste commands
 - [grim](https://github.com/emersion/grim) for taking screenshots
-- [slurt](https://github.com/emersion/slurp) for selecting area for screenshots
+- [slurp](https://github.com/emersion/slurp) for selecting area for screenshots
 
 ### [Write Clipboard to File](write-clipboard-to-file.ini)
 
