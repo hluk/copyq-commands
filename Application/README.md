@@ -67,6 +67,12 @@ Removes background and text colors from rich text (e.g. text copied from web pag
 
 Command can be both automatically applied on text copied to clipboard and invoked from menu (or using custom shortcut).
 
+### [Remove Carriage Return, Line Feed and Multiple Space Then Paste](remove-carriage-return-linefeed-and-multiple-space-then-paste.ini)
+
+Removes carriage return, line feed and multiple space in the clipboard, then paste it.
+
+Useful when copy texts from PDF.
+
 ### [Render HTML](render-html.ini)
 
 Converts text item with HTML code to HTML item.
