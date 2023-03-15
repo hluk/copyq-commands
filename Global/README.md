@@ -154,19 +154,11 @@ in the main window.
 
 This script relies on the [mistletoe](https://github.com/miyuchina/mistletoe) project to do the
 actual Markdown parsing and conversion.
-This in turn requires that [Python](https://www.python.org/downloads/) 3.x is installed on the user computer.
+This in turn requires that [Python](https://www.python.org/downloads/) is installed on the user computer.
 
-At the time of writing, the mistletoe project seems to abandoned by its maintainers, so for example
-if a really working conversion to Jira markup is needed (see [PR #100](https://github.com/miyuchina/mistletoe/pull/100)),
-the recommended mistletoe installation steps are the following:
+See mistletoe's page linked above for the various possibilities of its installation.
 
-    cd /path/to/directory/of/your/choice
-    git clone https://github.com/pbodnar/mistletoe.git
-    cd mistletoe
-    git checkout master-pbo
-    pip3 install -e .
-
-For output format "HTML + code highlighting", an additional Python module needs to be installed:
+For output format "HTML + code highlighting", an additional Python package needs to be installed:
 
     pip3 install pygments
 
