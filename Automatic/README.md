@@ -15,6 +15,20 @@ or shown in GUI.
 
 Automatically adds new clipboard to tab with same name as title of the window where copy operation was performed.
 
+### [Decode URLs from Google Search](decode-google-search-url.ini)
+
+Automatically decodes a URL from Google Search when it's copied to the clipboard. For example, when the following URL is copied to the clipboard:
+
+> https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj95u6osNn_AhW0hJUCHePPAa8QFnoECA4QAQ&url=https%3A%2F%2Fhluk.github.io%2FCopyQ%2F
+
+It is replaced by:
+
+> https://hluk.github.io/CopyQ/
+
+which is the decoded `&url` part from the original URL. The original URL is also added to the active tab's history, but it is not copied to the clipboard.
+
+Note: needs a Python interpreter to be available at `/bin/python`.
+
 ### [Ignore Images when Text is Available](ignore-images-when-text-is-available.ini)
 
 This is useful for ignoring cells copied as images from Microsoft Excel and LibreOffice Calc.
