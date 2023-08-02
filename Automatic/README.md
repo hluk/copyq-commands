@@ -8,8 +8,8 @@ access to primary clipboard tab swift.
 
 ### [Copy a Secret If a Modifier Held](copy-a-secret-if-modifier-held.ini)
 
-If modifier is held for a second after copying a content, it will not be stored
-or shown in GUI.
+If any keyboard modifier (Ctrl, Shift, Alt etc) is held for a second after
+copying a content, it will not be stored or shown in GUI.
 
 ### [Copy Clipboard to Window Tabs](copy-clipboard-to-windows-tab.ini)
 
