@@ -95,6 +95,11 @@ Other options:
 Number of words to use from tags (not number of tags): `var words = 3`  
 Default file name if there are no tags: `var defaultname = 'clip'`
 
+### [Search & Replace](search-and-replace.ini)
+
+Search and replace specified text in the currently selected items or all items
+in the current tab.
+
 ### [Search All Tabs](search-all-tabs.ini)
 
 Searches an text in all tabs and stores found items in "Search" tab.
