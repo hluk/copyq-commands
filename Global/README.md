@@ -53,6 +53,13 @@ Copies current date/time in ISO8601 format to clipboard, adds it to the clipboar
 Generates a new RFC4122 version 4 compliant UUID, adds it to the clipboard history, copies it to the clipboard and pastes it to the current window.
 Full credit for UUID generation code goes to Jeff Ward (jcward.com), link: https://stackoverflow.com/a/21963136/11820711
 
+### [Push/Pop Items](push-pop-stack.ini)
+
+A global shortcut to copy selected text/HTML/image as a new top item in "Stack"
+tab and another shortcut to paste the top item and remove it from the tab.
+
+See: https://github.com/hluk/CopyQ/issues/597
+
 ### [Quickly Show Current Clipboard Content](quickly-show-current-clipboard-content.ini)
 
 Quickly pops up notification with text in clipboard using `Win+Alt+C` system shortcut.
