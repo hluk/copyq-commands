@@ -35,11 +35,6 @@ Available in CopyQ v3.0.0.
 
 Creates interactive link from plain text.
 
-### [Move Images to Other Tab](move-images-to-other-tab.ini)
-
-Omits saving images in the first tab.
-This can make application a bit more snappier since big image data won't need to be loaded when main window is displayed or clipboard is stored for the first time.
-
 ### Play Sound when Copying to Clipboard ([Windows](play-sound-when-copying-to-clipboard-windows.ini), [Linux](play-sound-when-copying-to-clipboard-linux.ini))
 
 Following command will play an audio file whenever something is copied clipboard.
