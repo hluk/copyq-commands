@@ -126,6 +126,13 @@ Two commands to move items to trash and to undo removals.
 Pastes selected Json text as a formatted Json text.
 If not Json, just pastes the text as is.
 
+### [QR Code](qr-code.ini)
+
+From currently selected text items, creates a new item with the QR code for the
+text.
+
+Requires [qrcode](https://github.com/lincolnloop/python-qrcode) utility.
+
 ### [Tab Key to Select Next/Previous](tab-key-select.ini)
 
 Use Tab and Shift+Tab to select next/previous item.
