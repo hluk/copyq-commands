@@ -67,7 +67,7 @@ Command "Paste Items when Activated" pastes items when activated (on
 double-click or Enter key) depending on application configuration (History
 configuration tab).
 
-Paste behaviour is implemented with Shift+Enter shortcut. It works in most
+Paste behaviour is implemented with Shift+Insert shortcut. It works in most
 applications by default, but you may need to enable it for some (for example,
 for terminal emulators).
 Exact configuration changes vary by application. For example, for alacritty
