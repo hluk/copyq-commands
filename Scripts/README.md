@@ -67,6 +67,15 @@ Command "Paste Items when Activated" pastes items when activated (on
 double-click or Enter key) depending on application configuration (History
 configuration tab).
 
+Paste behaviour is implemented with Shift+Insert shortcut. It works in most
+applications by default, but you may need to enable it for some (for example,
+for terminal emulators).
+Exact configuration changes vary by application. For example, for alacritty
+you should modify your `alacritty.yml` with next line:
+```yaml
+  - { key: Insert, mods: Shift, action: Paste }
+```
+
 Requirements:
 
 - [ydotool](https://github.com/ReimuNotMoe/ydotool) for copy/paste commands
