@@ -19,6 +19,11 @@ Automatically adds new clipboard to tab with same name as title of the window wh
 
 This is useful for ignoring cells copied as images from Microsoft Excel and LibreOffice Calc.
 
+### [Ignore Passwords/Tokens](ignore-passwords-tokens.ini)
+
+Ignore the clipboard if it contains a password or token based on the text
+characteristics (length, uppercase letters, digits).
+
 ### [Image Tab](image-tab.ini)
 
 Automatically store images copied to clipboard in a separate tab.
