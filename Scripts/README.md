@@ -60,8 +60,8 @@ Show main window after application starts.
 
 ### [Wayland Support](wayland-support.ini)
 
-Adds support for some features under Wayland compositors in KDE, Gnome and
-Sway.
+Adds support for some features under Wayland compositors in KDE, Sway, Hyprland
+and possibly others.
 
 Command "Paste Items when Activated" pastes items when activated (on
 double-click or Enter key) depending on application configuration (History
@@ -75,6 +75,8 @@ you should modify your `alacritty.yml` with next line:
 ```yaml
   - { key: Insert, mods: Shift, action: Paste }
 ```
+
+Getting window title is currently implemented only for Sway and Hyprland.
 
 Requirements:
 
