@@ -12,6 +12,12 @@ automatic commands on it.
 Only checksum of the text (salted) is stored in the blocklist so this can be
 safely used with passwords (the texts are not stored anywhere).
 
+### [Bookmarks](bookmarks.ini)
+
+Allows you to set a mark on an item, then later restore that mark to the clipboard. 
+
+The implementation uses special tags with a "mark:" prefix, and when a mark is set, removes  that tag from any items that contain that tag.
+
 ### [Clear Clipboard After Interval](clear-clipboard-after-interval.ini)
 
 Clears clipboard after an interval (30 seconds by default).
