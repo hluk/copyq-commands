@@ -66,13 +66,8 @@ Show main window after application starts.
 
 ### [Top Item to Clipboard](top-item-to-clipboard.ini)
 
-Whenever a new top item is added to the clipboard tab, it is also copied to
-the system clipboard.
-
-This can be useful if **Synchronization** is enabled with a CopyQ instance
-running on different machine. In such case, this command ensures that system
-clipboard contents are also synchronized (if the clipboard is automatically
-inserted to the tab as the first item).
+Whenever a new top item is added to the clipboard tab or is changed, it is also
+copied to the system clipboard.
 
 ### [Wayland Support](wayland-support.ini)
 
