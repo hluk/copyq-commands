@@ -91,6 +91,7 @@ Getting window title is currently implemented only for Sway and Hyprland.
 
 Requirements:
 
+- [kdotool](https://github.com/jinliu/kdotool) for getting window titles on KDE
 - [ydotool](https://github.com/ReimuNotMoe/ydotool) for copy/paste commands
 - [grim](https://github.com/emersion/grim) for taking screenshots
 - [slurp](https://github.com/emersion/slurp) for selecting area for screenshots
