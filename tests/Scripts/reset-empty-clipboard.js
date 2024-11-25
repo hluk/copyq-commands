@@ -1,30 +1,17 @@
-const lastClipboard = () => settings('lastClipboard')
+function lastClipboard() {
+    const v = settings('lastClipboard');
+    if (v) {
+        return v[0];
+    }
+    return undefined;
+}
 test.assertEquals(undefined, lastClipboard())
 
-let copiedFormat = null
-let copiedText = null
-global.copy = (format, text) => {
-    copiedFormat = format
-    copiedText = text
-}
-
 const testText = ByteArray('Test');
-setData(mimeText, testText)
-test.assertTrue(hasData())
-global.clipboard = () => { return testText; }
-onClipboardChanged()
+test.copy(testText)
+test.clipboardTextEquals(testText, 'clipboard after copy')
+test.waitForEquals(testText, lastClipboard, 'lastClipboard settings set')
 
-const stored = lastClipboard()
-test.assertEquals(testText, stored[0])
-test.assertEquals(null, copiedFormat)
-test.assertEquals(null, copiedText)
-
-removeData(mimeText)
-test.assertFalse(hasData())
-global.clipboard = () => { return ByteArray(); }
-onClipboardChanged()
-
-test.assertEquals(stored[0], lastClipboard()[0])
-test.assertEquals(stored[1], lastClipboard()[1])
-test.assertEquals(mimeText, copiedFormat)
-test.assertEquals(testText, copiedText)
+test.copy(ByteArray())
+test.waitForEquals(testText, lastClipboard, 'lastClipboard settings unchanged')
+test.clipboardTextEquals(testText, 'clipboard after reset')

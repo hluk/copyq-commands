@@ -5,11 +5,10 @@ set -euo pipefail
 export COPYQ_SESSION=command-tests
 export COPYQ_SESSION_COLOR=red
 export COPYQ_SETTINGS_PATH=/tmp/copyq-command-tests-config
-export COPYQ_LOG_FILE=/tmp/copyq-command-tests-last.log
+export COPYQ_LOG_FILE=/tmp/copyq-command-tests.log
 export COPYQ_LOG_LEVEL=${COPYQ_LOG_LEVEL:-WARNING}
 export COPYQ=${COPYQ:-copyq}
 
-tests_log_file=/tmp/copyq-command-tests.log
 copyq_pid=""
 failed_count=0
 
@@ -43,7 +42,7 @@ run_script() {
 
     if ! run_copyq source tests/test_functions.js test.run "$js"; then
         cat "$COPYQ_LOG_FILE"
-        echo "Failed! See whole log: $tests_log_file"
+        echo "Failed! See whole log: $COPYQ_LOG_FILE"
         echo
         failed_count=$((failed_count + 1))
     fi
@@ -68,21 +67,18 @@ if [[ $# == 0 ]]; then
     exec "$0" tests/*/*.js
 fi
 
-rm -f "$tests_log_file"
-
 for js in "$@"; do
     echo "Test: $js"
 
     rm -f "$COPYQ_LOG_FILE"
-    echo "*** Starting: $js" >> "$tests_log_file"
+    echo "*** Starting: $js" >> "$COPYQ_LOG_FILE"
 
     stop_server
     start_server
 
     run_script "$js"
 
-    cat "$COPYQ_LOG_FILE" > "$tests_log_file"
-    echo "*** Finished: $js" >> "$tests_log_file"
+    echo "*** Finished: $js" >> "$COPYQ_LOG_FILE"
 done
 
 if [[ $failed_count -gt 0 ]]; then

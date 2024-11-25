@@ -1,14 +1,26 @@
 test = {
-    assertEquals: function(expected, actual, label) {
+    objectEquals: function(lhs, rhs) {
+        return typeof(lhs) == "object" && lhs.equals && lhs.equals(rhs);
+    },
+
+    equals: function(expected, actual) {
         if (expected == actual) {
-            return;
+            return true;
         }
 
-        if (expected.equals && expected.equals(actual)) {
-            return;
+        if (test.objectEquals(expected, actual)) {
+            return true;
         }
 
-        if (actual.equals && actual.equals(expected)) {
+        if (test.objectEquals(actual, expected)) {
+            return true;
+        }
+
+        return false;
+    },
+
+    assertEquals: function(expected, actual, label) {
+        if (test.equals(expected, actual)) {
             return;
         }
 
@@ -28,7 +40,7 @@ test = {
 
     waitForEquals: function(expected, getter, label) {
         let actual = getter();
-        for (let i = 0; actual != expected && i < 10; ++i) {
+        for (let i = 0; !test.equals(actual, expected) && i < 10; ++i) {
             sleep(500);
             actual = getter();
         }
@@ -68,6 +80,8 @@ test = {
         }
 
         setCommands(commands);
+
+        test.waitForEquals(true, isClipboardMonitorRunning, 'wait for monitor');
     },
 
     importCommandsForTest: function(js) {
@@ -95,5 +109,12 @@ test = {
         }
 
         return result.stdout;
-    }
+    },
+
+    // Simulate non-owned copying which would trigger onClipboardChanged
+    // instead of onOwnClipboardChanged callback triggered after calling
+    // copy(text).
+    copy: function(text) {
+        global.copy(mimeText, text, mimeOwner, '')
+    },
 }
