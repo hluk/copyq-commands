@@ -1,2 +1,2 @@
 // tests: noshow restart
-test.waitForEquals('window state', true, visible)
+test.waitForEquals(true, visible, 'window state')

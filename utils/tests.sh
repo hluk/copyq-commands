@@ -6,7 +6,7 @@ export COPYQ_SESSION=command-tests
 export COPYQ_SESSION_COLOR=red
 export COPYQ_SETTINGS_PATH=/tmp/copyq-command-tests-config
 export COPYQ_LOG_FILE=/tmp/copyq-command-tests-last.log
-export COPYQ_LOG_LEVEL=DEBUG
+export COPYQ_LOG_LEVEL=${COPYQ_LOG_LEVEL:-WARNING}
 export COPYQ=${COPYQ:-copyq}
 
 tests_log_file=/tmp/copyq-command-tests.log
@@ -15,12 +15,12 @@ failed_count=0
 
 run_copyq() {
     echo "--- Test Command: $COPYQ $*" >> "$COPYQ_LOG_FILE"
-    "$COPYQ" "$@" 2> /dev/null
+    "$COPYQ" "$@" 2>> "$COPYQ_LOG_FILE"
 }
 
 stop_server() {
     if [[ -n "$copyq_pid" ]]; then
-        if kill "$copyq_pid"; then
+        if kill "$copyq_pid" 2> /dev/null; then
             wait "$copyq_pid"
         fi
         copyq_pid=""
@@ -30,7 +30,7 @@ stop_server() {
 
 start_server() {
     mkdir -p "$COPYQ_SETTINGS_PATH"
-    "$COPYQ" 2> /dev/null &
+    "$COPYQ" 2>> "$COPYQ_LOG_FILE" &
     copyq_pid=$!
     run_copyq copy '' > /dev/null
     show_if_needed
