@@ -34,8 +34,6 @@ Shows notification allowing to easily import commands just copied to clipboard.
 
 The copied text can be either link to a command on github or starts with `[Command]` or `[Commands]`.
 
-Available in CopyQ v3.0.0.
-
 ### [Linkify](linkify.ini)
 
 Creates interactive link from plain text.
