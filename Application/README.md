@@ -131,6 +131,10 @@ text.
 
 Requires [qrcode](https://github.com/lincolnloop/python-qrcode) utility.
 
+### [Sort Tabs](sort-tabs.ini)
+
+Sorts tabs by name.
+
 ### [Tab Key to Select Next/Previous](tab-key-select.ini)
 
 Use Tab and Shift+Tab to select next/previous item.
