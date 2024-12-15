@@ -121,6 +121,10 @@ To pick different tab name, you have to change the command's code.
 
 Restarts stopwatch and copies elapsed time since last started.
 
+### [Tabs navigation](tabs-navigation.ini)
+
+Global shortcuts to select tabs. It is possible to select the Nth tab by order and the next or previous tab.
+
 ### [Toggle Clipboard Storing](toggle-clipboard-storing.ini)
 
 Toggles clipboard storing/monitoring with global shortcut or from menu/toolbar.
