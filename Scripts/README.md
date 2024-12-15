@@ -45,6 +45,10 @@ Indicates a copy operation by changing the icon tag.
 Keeps the first item (can be pinned) in clipboard at start and after a copy
 operation (after custom interval).
 
+### [Make a selected tab as clipboard tab and put first item to clipboard](make-selected-tab-as-clipboard.ini)
+
+Make the current selected tab as clipboard tab and put first item to clipboard.
+
 ### [No Clipboard in Title and Tool Tip](no-clipboard-in-title-and-tooltip.ini)
 
 Stop showing current clipboard content in window title and tray tool tip.
