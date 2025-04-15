@@ -97,8 +97,12 @@ Requirements:
 
 - [kdotool](https://github.com/jinliu/kdotool) for getting window titles on KDE
 - [ydotool](https://github.com/ReimuNotMoe/ydotool) for copy/paste commands
-- [grim](https://github.com/emersion/grim) for taking screenshots
-- [slurp](https://github.com/emersion/slurp) for selecting area for screenshots
+- [gnome-screenshot](https://gitlab.gnome.org/GNOME/gnome-screenshot) for
+  taking screenshots in Gnome
+- [grim](https://github.com/emersion/grim) and
+  [slurp](https://github.com/emersion/slurp) for taking screenshots in Sway and
+- [spectacle](https://invent.kde.org/graphics/spectacle) for screenshots in
+  other environments
 
 ### [Write Clipboard to File](write-clipboard-to-file.ini)
 
