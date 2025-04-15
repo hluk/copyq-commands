@@ -91,7 +91,7 @@ you should modify your `alacritty.yml` with next line:
   - { key: Insert, mods: Shift, action: Paste }
 ```
 
-Getting window title is currently implemented only for Sway and Hyprland.
+Getting window title is currently implemented only for KDE, Sway and Hyprland.
 
 Requirements:
 
@@ -101,6 +101,7 @@ Requirements:
   taking screenshots in Gnome
 - [grim](https://github.com/emersion/grim) and
   [slurp](https://github.com/emersion/slurp) for taking screenshots in Sway and
+  Hyprland
 - [spectacle](https://invent.kde.org/graphics/spectacle) for screenshots in
   other environments
 
