@@ -8,9 +8,9 @@ Remove all items from clipboard tab using menu item (or custom shortcut).
 
 Allows to easily share items in readable text format.
 
-### [Edit File](edit-file.ini)
+### [Edit Files](edit-files.ini)
 
-Opens file referenced by selected item in external editor (uses "External editor command" from "History" config tab).
+Opens files referenced by selected item in external editor (uses "External editor command" from "History" config tab).
 
 Works with following path formats (some editors may not support all of these).
 
