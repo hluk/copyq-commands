@@ -195,3 +195,35 @@ Z1
 └─ Y1
    └─ X1
 ```
+
+
+### [Sort Items](sort-items.ini)
+Sort items based on copy time, size, pinned status, etc.
+
+- When selecting single item, sort the entire tab
+- When selecting multiple items, only sort the selected items
+
+### [Auto Preview Image or Long-text](auto-preview.ini)
+Automatically preview images and long-text, and support manual preview with `Space` key. You can set the number of lines and characters for long text.
+
+```
+// More than 100 characters and 2 lines are considered as long text
+var LongTextCharacters = 100
+var LongTextLines = 2
+```
+
+### [Filter](filter.ini)
+Add a filter menu to quickly filter images, URLs, files, etc.
+
+You can customize the filters：
+
+```
+var filter1= {
+    [mimeText]: 'File  ---------------- F',    //Text displayed on the menu
+    [mimeIcon]: '',
+    filter: '(?=^file://)',    //Regular expression of the filter
+    shortcut: 'f'    //You need to set the menu shortcut of this command at the same time.
+}
+
+var filters = [filter1, filter2, filter3, ...]    //Add filters to the list
+```
