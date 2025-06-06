@@ -26,6 +26,10 @@ Clears clipboard after an interval (30 seconds by default).
 
 Persistently displays notification with clipboard (and X11 selection) content.
 
+### [Convert to Uppercase](convert-to-uppercase.ini)
+
+Converts clipboard text to all uppercase letters.
+
 ### [Full Clipboard Text in Title and Tooltip](full-clipboard-in-title.ini)
 
 Shows full clipboard text in window title and tray tooltip.
@@ -63,6 +67,10 @@ This command makes the last set state persistent between application launches.
 ### [Reset Empty Clipboard/Selection](reset-empty-clipboard.ini)
 
 Resets last clipboard text (or X11 selection) if it's cleared.
+
+### [Reverse Clipboard Text](reverse-clipboard-text.ini)
+
+Reverses the characters in the clipboard text.
 
 ### [Show on Start](show-on-start.ini)
 
