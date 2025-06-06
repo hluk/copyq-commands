@@ -26,9 +26,14 @@ Clears clipboard after an interval (30 seconds by default).
 
 Persistently displays notification with clipboard (and X11 selection) content.
 
+### [Convert to Lowercase](convert-to-lowercase.ini)
+
+Converts clipboard text to all Lowercase letters.
+
 ### [Convert to Uppercase](convert-to-uppercase.ini)
 
 Converts clipboard text to all uppercase letters.
+
 
 ### [Full Clipboard Text in Title and Tooltip](full-clipboard-in-title.ini)
 
