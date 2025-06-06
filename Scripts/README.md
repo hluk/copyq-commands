@@ -64,6 +64,10 @@ re-enabled automatically on the application start next time.
 
 This command makes the last set state persistent between application launches.
 
+### [Remove Duplicate Lines](remove-duplicate-lines.ini)
+
+Removes duplicate lines from clipboard text.
+
 ### [Reset Empty Clipboard/Selection](reset-empty-clipboard.ini)
 
 Resets last clipboard text (or X11 selection) if it's cleared.
