@@ -1,0 +1,22 @@
+name: Validate CopyQ Commands
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check-ini-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Check for .ini files in Scripts/
+        run: |
+          count=$(find Scripts -name "*.ini" | wc -l)
+          echo "Found $count .ini files."
+          if [ "$count" -eq 0 ]; then
+            echo "❌ No .ini files found in Scripts/"
+            exit 1
+          fi
