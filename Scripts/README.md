@@ -85,6 +85,10 @@ Show main window after application starts.
 Whenever a new top item is added to the clipboard tab or is changed, it is also
 copied to the system clipboard.
 
+### [Trim Whitespace](trim-whitespace.ini)
+
+Removes leading and trailing spaces from clipboard text.
+
 ### [Wayland Support](wayland-support.ini)
 
 Adds support for some features under Wayland compositors in KDE, Sway, Hyprland
