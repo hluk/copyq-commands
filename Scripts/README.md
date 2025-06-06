@@ -26,6 +26,15 @@ Clears clipboard after an interval (30 seconds by default).
 
 Persistently displays notification with clipboard (and X11 selection) content.
 
+### [Convert to Lowercase](convert-to-lowercase.ini)
+
+Converts clipboard text to all Lowercase letters.
+
+### [Convert to Uppercase](convert-to-uppercase.ini)
+
+Converts clipboard text to all uppercase letters.
+
+
 ### [Full Clipboard Text in Title and Tooltip](full-clipboard-in-title.ini)
 
 Shows full clipboard text in window title and tray tooltip.
@@ -60,9 +69,17 @@ re-enabled automatically on the application start next time.
 
 This command makes the last set state persistent between application launches.
 
+### [Remove Duplicate Lines](remove-duplicate-lines.ini)
+
+Removes duplicate lines from clipboard text.
+
 ### [Reset Empty Clipboard/Selection](reset-empty-clipboard.ini)
 
 Resets last clipboard text (or X11 selection) if it's cleared.
+
+### [Reverse Clipboard Text](reverse-clipboard-text.ini)
+
+Reverses the characters in the clipboard text.
 
 ### [Show on Start](show-on-start.ini)
 
@@ -72,6 +89,10 @@ Show main window after application starts.
 
 Whenever a new top item is added to the clipboard tab or is changed, it is also
 copied to the system clipboard.
+
+### [Trim Whitespace](trim-whitespace.ini)
+
+Removes leading and trailing spaces from clipboard text.
 
 ### [Wayland Support](wayland-support.ini)
 
