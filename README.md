@@ -1,42 +1,104 @@
-Useful commands for [CopyQ clipboard manager](https://github.com/hluk/CopyQ).
+# CopyQ Command Project
 
-You can share your commands and ideas here.
-Just open pull request or an issue.
+## 🎯 Goal
 
-# Categories
+This project aims to contribute useful custom commands (based on .ini files) to the CopyQ clipboard manager.
+It includes the development of text processing commands such as uppercase/lowercase conversion, line sorting, and duplicate removal, all of which are packaged and executable in a Docker container environment.
 
-- [Application](https://github.com/hluk/copyq-commands/tree/master/Application) - Commands which can be executed from tool bar, menu or with shortcut
-- [Automatic](https://github.com/hluk/copyq-commands/tree/master/Automatic) - Commands which are executed automatically whenever something is copied to clipboard
-- [Display](https://github.com/hluk/copyq-commands/tree/master/Display) - Scripts for changing appearance of items
-- [Global](https://github.com/hluk/copyq-commands/tree/master/Global) - Commands which can be executed with global/system shortcut
-- [Scripts](https://github.com/hluk/copyq-commands/tree/master/Scripts) - Scripts for changing application behavior, extending command line and adding functionality
-- [Templates](https://github.com/hluk/copyq-commands/tree/master/Templates) - Templates for new commands
+## 📋 Requirements
 
-# Add a Command to CopyQ
+The Docker image includes the following software and libraries:
 
-To add a command to CopyQ:
+* platform ex) Ubuntu
+* curl >= 8.0.0
+* CopyQ >= 7.0.0
+* Custom command files (.ini format)
 
-- copy the command code (starts with `[Command]` or `[Commands]` for multiple commands),
-- open CopyQ,
-- open Command dialog (<kbd>F6</kbd> shortcut),
-- click "Paste Commands" button (or <kbd>Ctrl</kbd>+<kbd>V</kbd>),
-- apply changes.
+## 📦 How to install & Run
 
-To **simplify this** add [command](Automatic/import-commands-after-copied.ini)
-which shows notification with button to import all commands copied to clipboard.
-This also works if you just copy a link with commands.
+Load image from tar file
 
-![Select Category](images/select-category.png)
-![Copy Command Link](images/copy-command-link.png)
-![Import Command Notification](images/import-command-notification.png)
+```bash
+docker load -i final_2021040010.v1.tar
+```
 
-# Write new Commands
+Check image
 
-See following documentation about writing commands and scripting.
+```bash
+docker images
+```
 
-- [Writing Commands and Adding Functionality](https://copyq.readthedocs.io/en/latest/writing-commands-and-adding-functionality.html)
-- [Scripting](https://copyq.readthedocs.io/en/latest/scripting.html)
-- [Scripting API](https://copyq.readthedocs.io/en/latest/scripting-api.html)
+create the container
 
-Submit new pull request in this repository if you want to share a command.
+```bash
+docker run -dit final_2021040010:v1
+```
 
+find container
+
+```bash
+docker ps
+```
+
+Access the container
+
+```bash
+docker exec -it <CONTAINER_ID> /bin/bash
+```
+
+## ⚙ How to run
+
+All command files are stored in /app/Scripts with .ini extension. These commands can be imported into the CopyQ clipboard manager and executed directly.
+
+To use a command:
+1. Open CopyQ application.
+2. Press F6 to open the Command Editor.
+3. Click Paste Commands (or press Ctrl + V) after copying the command content.
+4. Apply and test the command using clipboard input.
+
+Each .ini file defines a command using CopyQ's scripting API (JavaScript-like syntax) and can be executed from the toolbar, menu, shortcut, or automatically depending on category.
+
+## 📁 Directory Structure
+
+```
+/app/
+├── .github/                 # GitHub files
+├── Application/             # Toolbar/shortcut commands
+├── Automatic/               # Auto-run commands on clipboard change
+├── Display/                 # Commands for item appearance
+├── Global/                  # System-wide shortcut commands
+├── Scripts/                 # Custom commands added in this project (.ini)
+├── Templates/               # Templates for new commands
+├── images/                  # Reference images in README
+├── tests/                   # Test scripts
+├── utils/                   # Utility scripts
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
+## 🛑 Exit and Clean Up
+
+Exit the container
+```bash
+exit
+```
+
+Stop the container
+```bash
+docker stop <CONTAINER_ID>
+```
+
+Remove the container
+```bash
+docker rm <CONTAINER_ID>
+```
+
+Remove the image
+```bash
+docker rmi final_2021040010:v1
+```
+
+## 📄 License
+
+This project is licensed under the GPL-3.0 License. See the [LICENSE](https://github.com/02LMJ/copyq-commands/blob/master/LICENSE) file for more details.
