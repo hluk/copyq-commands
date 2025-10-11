@@ -27,6 +27,11 @@ Safely types in decrypted text of selected item instead of using clipboard.
 
 Requires "xdotool" utility which works only on Linux/X11.
 
+### [Navigate Tabs With Alt+Number](tab-alt-navigation.ini)
+
+Enables Alt+1 .. Alt+9, Alt+0 to navigate to the tab based on the order
+(instead of the default Ctrl+Number navigation).
+
 ### [Next/Previous](next-previous.ini)
 
 Remaps Up/Down arrows for browsing items to Ctrl+P/Ctrl+N or other custom
