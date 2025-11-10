@@ -1,22 +1,24 @@
+**Important:** Refer to [the main README.md](../README.md) for updated list of commands.
+
 This section contains commands which change appearance of items.
 
-### [Highlight Code](highlight-code.ini)
+### [Highlight Code](../commands/highlight-code.ini)
 
 Highlights syntax for recognized code.
 
-Requires Python and [Pygments](https://pygments.org/).
+Requires Python and [Pygments](../commands/https://pygments.org/).
 
-### [Preview Image Files](preview-image-files.ini)
+### [Preview Image Files](../commands/preview-image-files.ini)
 
 Shows images instead of just a path (works with `file://...`).
 
-### [Render Markdown](render-markdown.ini)
+### [Render Markdown](../commands/render-markdown.ini)
 
 Renders markdown if recognized.
 
-Requires [marked](https://marked.js.org/).
+Requires [marked](../commands/https://marked.js.org/).
 
-### [Toggle Show As Plain Text](toggle-show-as-plain-text.ini)
+### [Toggle Show As Plain Text](../commands/toggle-show-as-plain-text.ini)
 
 Display command combined with a shortcut that changes how selected items are
 displayed: as plain text or rich text (HTML).
