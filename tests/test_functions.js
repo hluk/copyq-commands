@@ -52,9 +52,7 @@ test = {
         test.waitForEquals(expected, clipboard, 'clipboard text');
     },
 
-    importCommands: function(ini) {
-        serverLog('Importing: ' + ini);
-
+    loadCommands: function(ini) {
         let commandConfigFile = new File(ini);
         if (!commandConfigFile.openReadOnly()) {
             throw 'Failed to open ini file: ' + ini;
@@ -64,6 +62,16 @@ test = {
         commandConfigFile.close();
 
         const commands = importCommands(commandConfigContent);
+        if (commands.length == 0) {
+            throw 'Failed to load ini file: ' + ini;
+        }
+        return commands;
+    },
+
+    importCommands: function(ini) {
+        serverLog('Importing: ' + ini);
+
+        const commands = test.loadCommands(ini);
         if (commands.length == 0) {
             throw 'Failed to load ini file: ' + ini;
         }
@@ -79,7 +87,8 @@ test = {
             }
         }
 
-        setCommands(commands);
+        const mocks = test.loadCommands('tests/mocks.ini');
+        setCommands(commands.concat(mocks));
 
         test.waitForEquals(true, isClipboardMonitorRunning, 'wait for monitor');
     },
@@ -99,13 +108,15 @@ test = {
 
     execute: function() {
         const result = execute.apply(this, arguments);
-        const cmd = Array.prototype.slice.call(arguments).join(" ");
+        const cmd = Array.prototype.slice.call(arguments).join(" ").replace(/\n/g, "\n    ");
         if (!result) {
             throw 'Failed to execute: ' + cmd;
         }
 
         if (result.exit_code != 0) {
-            throw 'Non-zero exit code (' + result.exit_code + ') from command: ' + cmd;
+            throw 'Non-zero exit code: ' + result.exit_code
+                + '\n  command: ' + cmd
+                + '\n  stderr:\n' + result.stderr.replace(/\n/g, "\n    ");;
         }
 
         return result.stdout;
@@ -116,5 +127,15 @@ test = {
     // copy(text).
     copy: function(text) {
         global.copy(mimeText, text, mimeOwner, '')
+    },
+
+    findCommand = function(commandName) {
+        const cmds = commands();
+        for (const cmd of cmds) {
+            if (cmd.name == commandName) {
+                return cmd;
+            }
+        }
+        throw `Failed to find enabled command with name: ${commandName}`;
     },
 }

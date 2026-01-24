@@ -4,13 +4,29 @@ set -euo pipefail
 
 export COPYQ_SESSION=command-tests
 export COPYQ_SESSION_COLOR=red
+export COPYQ_DEFAULT_ICON=1
 export COPYQ_SETTINGS_PATH=/tmp/copyq-command-tests-config
 export COPYQ_LOG_FILE=/tmp/copyq-command-tests.log
-export COPYQ_LOG_LEVEL=${COPYQ_LOG_LEVEL:-WARNING}
+export COPYQ_LOG_LEVEL=${COPYQ_LOG_LEVEL:-DEBUG}
 export COPYQ=${COPYQ:-copyq}
+
+# Try to find itemtests plugin required by tests
+if [[ -z "${COPYQ_PLUGINS:-}" ]]; then
+    plugin=$(dirname "$(which "$COPYQ")")/src/libitemtests.so
+    export COPYQ_PLUGINS=$plugin
+fi
+
+if [[ ! -f "$COPYQ_PLUGINS" ]]; then
+    echo "Set COPYQ_PLUGINS env variable to itemtests plugin path"
+    exit 1
+fi
 
 copyq_pid=""
 failed_count=0
+
+log_file_prefix() {
+    echo "${COPYQ_LOG_FILE/.log}"
+}
 
 run_copyq() {
     echo "--- Test Command: $COPYQ $*" >> "$COPYQ_LOG_FILE"
@@ -18,67 +34,51 @@ run_copyq() {
 }
 
 stop_server() {
-    if [[ -n "$copyq_pid" ]]; then
-        if kill "$copyq_pid" 2> /dev/null; then
-            wait "$copyq_pid"
-        fi
-        copyq_pid=""
-    fi
-    rm -rf "$COPYQ_SETTINGS_PATH"
+    COPYQ_WAIT_FOR_SERVER_MS=0 run_copyq exit || true
 }
 
 start_server() {
+    rm -rf "$COPYQ_SETTINGS_PATH"
     mkdir -p "$COPYQ_SETTINGS_PATH"
     "$COPYQ" 2>> "$COPYQ_LOG_FILE" &
     copyq_pid=$!
     run_copyq copy '' > /dev/null
-    show_if_needed
+    run_copyq show
+    run_copyq plugins.itemtests.keys 'focus:^ClipboardBrowser'
+    run_copyq 'for (i=0; i<10 && !isClipboardMonitorRunning(); ++i) {sleep(100);}'
+    if ! run_copyq 'isClipboardMonitorRunning || fail' > /dev/null; then
+        echo "Failed to start clipboard monitor"
+        exit 1
+    fi
 }
 
 run_script() {
     run_copyq source tests/test_functions.js test.importCommandsForTest "$js"
 
-    restart_if_needed
-
     if ! run_copyq source tests/test_functions.js test.run "$js"; then
         cat "$COPYQ_LOG_FILE"
-        echo "Failed! See whole log: $COPYQ_LOG_FILE"
-        echo
+        sort "$(log_file_prefix)-"*.log*
         failed_count=$((failed_count + 1))
     fi
 }
 
-show_if_needed() {
-    if ! grep -q '^// tests:.*noshow' "$js"; then
-        run_copyq show
-    fi
-}
-
-restart_if_needed() {
-    if grep -q '^// tests:.*restart' "$js"; then
-        run_copyq exit
-        start_server
-    fi
-}
-
-trap stop_server QUIT TERM INT HUP EXIT
+trap stop_server QUIT TERM INT EXIT
 
 if [[ $# == 0 ]]; then
-    exec "$0" tests/*/*.js
+    # Run more recently modified tests first
+    ls -t tests/*/*.js | xargs "$0"
+    exit 0
 fi
 
 for js in "$@"; do
-    echo "Test: $js"
+    rm -f "$(log_file_prefix)"*.log*
+    echo "*** Starting: $js"
 
-    rm -f "$COPYQ_LOG_FILE"
-    echo "*** Starting: $js" >> "$COPYQ_LOG_FILE"
-
-    stop_server
     start_server
-
     run_script "$js"
+    stop_server
 
-    echo "*** Finished: $js" >> "$COPYQ_LOG_FILE"
+    echo "*** Finished: $js"
 done
 
 if [[ $failed_count -gt 0 ]]; then

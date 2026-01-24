@@ -294,7 +294,17 @@ Toggles highlighting of selected items.
 
 ## [Modify Selected Items](commands/modify-selected-items.ini)
 
+A template command to modify selected items in some way.
+
+This is only a template: change body of `modifySelectedItemData()` function to
+replace the item data in a specific way.
+
 ## [Modify Selected Text](commands/modify-selected-text.ini)
+
+A template command to modify selected text and paste it back.
+
+This is only a template: change body of `modifyText()` function to
+replace the text in a specific way.
 
 ## [Navigate Tabs With Alt+Number](commands/tab-alt-navigation.ini)
 
