@@ -5,7 +5,8 @@ This section contains commands which can be executed with global/system shortcut
 
 ### [Copy a Secret](../commands/copy-a-secret.ini)
 
-Copies (Ctrl+C) from current window without storing or showing the data in GUI.
+Copies (by default with Ctrl+Shift+C) from current window without storing or
+showing the data in GUI.
 
 ### [Copy and Search on Web](../commands/copy-and-search-on-web.ini)
 

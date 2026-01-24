@@ -127,7 +127,8 @@ and [Tesseract](https://github.com/tesseract-ocr/tesseract/wiki/Downloads).
 
 ## [Copy a Secret](commands/copy-a-secret.ini)
 
-Copies (Ctrl+C) from current window without storing or showing the data in GUI.
+Copies (by default with Ctrl+Shift+C) from current window without storing or
+showing the data in GUI.
 
 ## [Copy a Secret If a Modifier Held](commands/copy-a-secret-if-modifier-held.ini)
 
