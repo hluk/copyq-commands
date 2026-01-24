@@ -56,8 +56,8 @@ run_script() {
     run_copyq source tests/test_functions.js test.importCommandsForTest "$js"
 
     if ! run_copyq source tests/test_functions.js test.run "$js"; then
-        cat "$COPYQ_LOG_FILE"
         sort "$(log_file_prefix)-"*.log*
+        cat "$COPYQ_LOG_FILE"
         failed_count=$((failed_count + 1))
     fi
 }
