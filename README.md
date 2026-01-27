@@ -513,6 +513,10 @@ Sort items based on copy time, size, pinned status, etc.
 
 Sorts tabs by name.
 
+## [Split Item to Lines](commands/split-item-to-lines.ini)
+
+Split selected items to separate lines (new item for each line).
+
 ## [Stopwatch](commands/stopwatch.ini)
 
 Restarts stopwatch and copies elapsed time since last started.
