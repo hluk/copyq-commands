@@ -354,7 +354,7 @@ Requires `mpv` utility.
 
 ## [Play Sound when Copying to Clipboard - Windows](commands/play-sound-when-copying-to-clipboard-windows.ini)
 
-Following command will play an audio file whenever something is copied clipboard.
+Plays a user-specified audio file whenever something is copied to the clipboard. If native notifications are enabled, this adds to their associated sound rather than replacing it.
 
 ## [Preview Image Files](commands/preview-image-files.ini)
 
