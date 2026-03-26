@@ -346,6 +346,12 @@ Pastes selected items and clear clipboard.
 Generates a new RFC4122 version 4 compliant UUID, adds it to the clipboard history, copies it to the clipboard and pastes it to the current window.
 Full credit for UUID generation code goes to Jeff Ward (jcward.com), link: https://stackoverflow.com/a/21963136/11820711
 
+## [Play Sound when Copying to Clipboard (Built-in)](commands/play-sound-when-copying-to-clipboard.ini)
+
+Plays a sound using CopyQ's built-in `playSound()` whenever something is copied to the clipboard. Supports wav, mp3 and flac files. No external dependencies required.
+
+Change `soundFilePath` and `volume` (0–100) in the command to customize.
+
 ## [Play Sound when Copying to Clipboard - Linux](commands/play-sound-when-copying-to-clipboard-linux.ini)
 
 Following command will play an audio file whenever something is copied clipboard.
