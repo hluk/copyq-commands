@@ -271,6 +271,10 @@ Creates new item containing concatenated text of selected items.
 Change the `separator` variable to separate the merged items with a different
 string than line break `\n`.
 
+## [Join Text To One Line](commands/join-text-to-one-line.ini)
+
+Join multiple lines text to one line.
+
 ## [KeePassXC protector](commands/keepassxc-protector.ini)
 
 A plugin that prevents saving data from the [KeePassXC](https://github.com/keepassxreboot/keepassxc) password manager.
