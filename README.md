@@ -427,7 +427,9 @@ Requires [marked](https://marked.js.org/).
 
 ## [Reset Empty Clipboard/Selection](commands/reset-empty-clipboard.ini)
 
-Resets last clipboard text (or X11 selection) if it's cleared.
+Automatically restores previous clipboard text if cleared. Also restores
+[the primary selection](https://copyq.readthedocs.io/en/latest/scripting-api.html#primary-selection)
+if cleared.
 
 ## [Save Item/Clipboard To a File](commands/save-item-clipboard-to-file.ini)
 
