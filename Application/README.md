@@ -2,6 +2,12 @@
 
 This section contains commands which can be executed from tool bar, menu or with shortcut.
 
+### [Activate Nth Item](../commands/activate-nth-item.ini)
+
+Press a digit key (0-9) in the main window to instantly activate and paste the item at that row index.
+
+Respects `row_index_from_one` configuration.
+
 ### [Clear Clipboard Tab](../commands/clear-clipboard-tab.ini)
 
 Remove all items from clipboard tab using menu item (or custom shortcut).
