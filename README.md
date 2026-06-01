@@ -35,6 +35,12 @@ Submit new pull request in this repository if you want to share a command.
 
 # Commands
 
+## [Activate Nth Item](commands/activate-nth-item.ini)
+
+Press a digit key (0-9) in the main window to instantly activate and paste the item at that row index.
+
+Respects `row_index_from_one` configuration.
+
 ## [Auto Preview Image or Long-text](commands/auto-preview.ini)
 
 Automatically preview images and long-text, and support manual preview with `Space` key. You can set the number of lines and characters for long text.
