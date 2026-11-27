@@ -137,6 +137,15 @@ Two commands to move items to trash and to undo removals.
 Pastes selected Json text as a formatted Json text.
 If not Json, just pastes the text as is.
 
+### [Paste Image as File Path](../commands/paste-image-as-file-path.ini)
+
+Saves the selected image as a PNG file in the temporary directory and pastes the
+file path as text. Useful to paste screenshots into applications which accept
+file paths (for example Claude Code).
+
+Image files created by this command which are older than 24 hours are removed
+the next time it runs (change `maxAgeMs` to keep them longer).
+
 ### [QR Code](../commands/qr-code.ini)
 
 From currently selected text items, creates a new item with the QR code for the

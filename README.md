@@ -339,6 +339,15 @@ Copies current date/time in ISO8601 format to clipboard, adds it to the clipboar
 Pastes selected Json text as a formatted Json text.
 If not Json, just pastes the text as is.
 
+## [Paste Image as File Path](commands/paste-image-as-file-path.ini)
+
+Saves the selected image as a PNG file in the temporary directory and pastes the
+file path as text. Useful to paste screenshots into applications which accept
+file paths (for example Claude Code).
+
+Image files created by this command which are older than 24 hours are removed
+the next time it runs (change `maxAgeMs` to keep them longer).
+
 ## [Paste Nth Item](commands/paste-nminus1th-item.ini)
 
 Paste items 1-9 in history using ctrl+1 through ctrl+9 shortcuts.
